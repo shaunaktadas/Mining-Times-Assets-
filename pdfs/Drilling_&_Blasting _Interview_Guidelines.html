@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body style="margin:0">
+
+<iframe id="pdf"
+style="width:100%;height:100vh;border:none">
+</iframe>
+
+<script>
+const params=new URLSearchParams(location.search);
+const file=params.get("file")||"Drilling & Blasting Interview Guidelines.pdf";
+document.getElementById("pdf").src="pdfs/"+file;
+</script>
+
+</body>
+</html>
